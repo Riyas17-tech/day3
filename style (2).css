@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background-color 0.5s ease;
+}
+
+.navbar {
+  background: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff9800;
+}
+
+/* Animation for title */
+.animated-title {
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.5; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
